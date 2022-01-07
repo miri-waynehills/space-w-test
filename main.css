@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+html, body {
+    width: device-width;
+}
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: 1;
+    width: device-width;
+    /* background: #ff87cf; */
+}
+
+.main-title {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 350px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-left: 0px;
+}
+
+.main-body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 350px;
+    height: 100px;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 1.9;
+    font-weight: 300;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.position-base {
+    position: absolute;
+    z-index: 10;
+    /* opacity: 0.6; */
+}
+
+.loading-bar-container {
+    position: absolute;
+    width: 500px;
+}
+
+.button-container {
+    position: absolute;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#reset-camera {
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    opacity: 0;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0%;
+    z-index: 11;
+  }
+
+#loading-background {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #000000;
+    opacity: 1;
+ 	transition: 1s opacity;
+}
+
+#loading-background.fade-out {
+    opacity: 0;
+}
+
+#loading-background.fade-in {
+    opacity: 1;
+}
+
+#loading-img {
+    position: absolute;    
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 100%;
+	height: auto;
+}
+
+#loading {
+    position: absolute;
+	z-index: 12;
+ 	transition: 1s opacity;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#loading-bar {
+	width: 445px;
+	height: 40px;
+	opacity: 1;
+ 	transition: 1s opacity; 
+    flex:3
+}
+
+#loading-button {
+    flex: 1;
+    width: 115px;
+	height: 40px;
+}
+
+#button-text {
+    color: #ffffff;
+    padding: 10px;
+}
+
+#ending-scene {
+    position: absolute;
+	z-index: 12;
+ 	transition: 1s opacity;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-wrap: wrap;
+}
+
+#to-beginning {
+    width: 150px;
+	height: 40px;
+    flex:1
+}
+
+#to-beginning-text {
+    color: #ffffff;
+    padding: 10px;
+}
+
+#to-website {
+    flex: 1;
+    width: 150px;
+	height: 40px;
+    margin-left: 20px;
+}
+
+#to-website-text {
+    color: #313E53;
+    padding-top: 10px;
+    padding-left: 28px;
+}
+
+/* 참고사이트
+https://velog.io/@commi1106/%ED%95%B4%EC%83%81%EB%8F%84%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%8B%AC%EB%9D%BC%EC%A7%80%EB%8A%94-%EC%BA%94%EB%B2%84%EC%8A%A4-%EB%A7%8C%EB%93%A4%EA%B8%B0 */
+
+@media screen and (min-width : 320px) and (max-width : 799px){
+    .main-title {
+        margin-left: 5px;
+        font-size: 10px;
+        width: 200px;
+        color: #fbff00;
+    }
+    .main-body {
+        margin-top: 20px;
+        margin-left: 5px;
+        font-size: 7.5px;
+        width: 200px;
+    }
+}
+
+@media screen and (min-width : 800px) and (max-width : 1439px) {
+    .main-title {
+        margin-left: 8px;
+        font-size: 14px;
+        width: 290px;
+        color: #f00000;
+    }
+    .main-body {
+        margin-top:12px;
+        margin-left: 5px;
+        font-size: 10.5px;
+        font-weight: 100;
+        width: 290px;
+    }
+}
+
+@media screen and (min-width : 1440px) and (max-width : 1919px) {
+    .main-title {
+        margin-left: 5px;
+        font-size: 20px;
+        width: 400px;
+        color: #00f000;
+    }
+    .main-body {
+        margin-top: -8px;
+        margin-left: 5px;
+        font-size: 14px;
+        width: 400px;
+    }
+}
+
+@media screen and (min-width : 1920px) and (max-width : 2304px) {
+    .main-title {
+        margin-left: 5px;
+        font-size: 28px;
+        width: 600px;
+        color: #0000f0;
+    }
+    .main-body {
+        margin-top: 15px;
+        margin-left: 5px;
+        font-size: 19px;
+        width: 600px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width : 2305px) and (max-width : 2880px) {
+    .main-title {
+        margin-left: 5px;
+        font-size: 35px;
+        width: 650px;
+        color: #ff00bf;
+    }
+    .main-body {
+        margin-left: 5px;
+        font-size: 23px;
+        width: 650px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width : 2881px) {
+    .main-title {
+        margin-left: 5px;
+        font-size: 50px;
+        width: 1000px;
+        color: #9900ff;
+    }
+    .main-body {
+        margin-left: 5px;
+        margin-top: -10px;
+        font-size: 32px;
+        width: 1000px;
+        height: 250px;
+    }
+}
+
+/*# sourceMappingURL=main.css.map*/
