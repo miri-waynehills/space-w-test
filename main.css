@@ -197,13 +197,13 @@ html, body {
 @media screen and (min-width : 800px) and (max-width : 1439px) {
     .main-title {
         font-size: 14px;
-        width: 240px;
+        width: 200px;
     }
     .main-body {
-        margin-top: 15px;
-        font-size: 9px;
+        margin-top: 22px;
+        font-size: 7.5px;
         font-weight: 100;
-        width: 240px;
+        width: 200px;
     }
     .video-class {
         width: 400px;
