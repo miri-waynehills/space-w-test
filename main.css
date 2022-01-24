@@ -197,13 +197,13 @@ html, body {
 @media screen and (min-width : 800px) and (max-width : 1439px) {
     .main-title {
         font-size: 14px;
-        width: 200px;
+        width: 240px;
     }
     .main-body {
-        margin-top: 22px;
-        font-size: 7.5px;
+        margin-top: 15px;
+        font-size: 8px;
         font-weight: 100;
-        width: 200px;
+        width: 240px;
     }
     .video-class {
         width: 400px;
@@ -214,12 +214,12 @@ html, body {
 @media screen and (min-width : 1440px) and (max-width : 1919px) {
     .main-title {
         font-size: 20px;
-        width: 380px;
+        width: 350px;
     }
     .main-body {
-        margin-top: 20px;
-        font-size: 14px;
-        width: 380px;
+        margin-top: 25px;
+        font-size: 13.5px;
+        width: 350px;
         height: 150px;
     }
     .video-class {
